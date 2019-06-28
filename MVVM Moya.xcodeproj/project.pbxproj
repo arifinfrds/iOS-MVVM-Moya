@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9230A66422C5BBE50005DAEE /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9230A66322C5BBE50005DAEE /* UserViewController.swift */; };
 		927848FB22C0D97200B7A541 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927848FA22C0D97200B7A541 /* AppDelegate.swift */; };
 		9278490022C0D97200B7A541 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927848FE22C0D97200B7A541 /* Main.storyboard */; };
 		9278490222C0D97300B7A541 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9278490122C0D97300B7A541 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		92A57E3522C0DCA7000160A1 /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A57E3422C0DCA7000160A1 /* ViewModelState.swift */; };
 		92A57E3722C0DE2B000160A1 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A57E3622C0DE2B000160A1 /* Resources.swift */; };
 		92A57E3922C0E0B0000160A1 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A57E3822C0E0B0000160A1 /* UsersViewModel.swift */; };
+		92BB9E5A22C5BE43008DFC6E /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BB9E5922C5BE43008DFC6E /* UserViewModel.swift */; };
 		A2D8BA3D6A415952775A9BDB /* Pods_MVVM_Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3716FC2FBB63F910642BA37D /* Pods_MVVM_Moya.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,7 @@
 		1A8A55C81129A532DE6676C6 /* Pods-MVVM Moya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM Moya.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM Moya/Pods-MVVM Moya.release.xcconfig"; sourceTree = "<group>"; };
 		3716FC2FBB63F910642BA37D /* Pods_MVVM_Moya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E8542C3DE349D974AE7CFA3 /* Pods-MVVM Moya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM Moya.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM Moya/Pods-MVVM Moya.debug.xcconfig"; sourceTree = "<group>"; };
+		9230A66322C5BBE50005DAEE /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		927848F722C0D97200B7A541 /* MVVM Moya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM Moya.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		927848FA22C0D97200B7A541 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		927848FF22C0D97200B7A541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 		92A57E3422C0DCA7000160A1 /* ViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelState.swift; sourceTree = "<group>"; };
 		92A57E3622C0DE2B000160A1 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		92A57E3822C0E0B0000160A1 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		92BB9E5922C5BE43008DFC6E /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			children = (
 				92A57E3422C0DCA7000160A1 /* ViewModelState.swift */,
 				92A57E3822C0E0B0000160A1 /* UsersViewModel.swift */,
+				92BB9E5922C5BE43008DFC6E /* UserViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 				9278490122C0D97300B7A541 /* Assets.xcassets */,
 				9278490322C0D97300B7A541 /* LaunchScreen.storyboard */,
 				9278490C22C0DA0400B7A541 /* UsersViewController.swift */,
+				9230A66322C5BBE50005DAEE /* UserViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -264,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92A57E3922C0E0B0000160A1 /* UsersViewModel.swift in Sources */,
+				9230A66422C5BBE50005DAEE /* UserViewController.swift in Sources */,
 				92A57E3122C0DC90000160A1 /* UserService.swift in Sources */,
 				927848FB22C0D97200B7A541 /* AppDelegate.swift in Sources */,
 				92A57E3322C0DC9A000160A1 /* UserDataService.swift in Sources */,
@@ -271,6 +278,7 @@
 				9278490D22C0DA0400B7A541 /* UsersViewController.swift in Sources */,
 				92A57E2B22C0DC4D000160A1 /* Address.swift in Sources */,
 				9278491422C0DB6500B7A541 /* User.swift in Sources */,
+				92BB9E5A22C5BE43008DFC6E /* UserViewModel.swift in Sources */,
 				92A57E2D22C0DC60000160A1 /* Geo.swift in Sources */,
 				92A57E2F22C0DC6E000160A1 /* Company.swift in Sources */,
 				92A57E3522C0DCA7000160A1 /* ViewModelState.swift in Sources */,

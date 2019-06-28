@@ -13,6 +13,8 @@ enum UserService {
     
     case fetchUsers
     
+    case fetchUser(id: Int)
+    
 }
 
 extension UserService: TargetType {
@@ -29,6 +31,8 @@ extension UserService: TargetType {
         switch self {
         case .fetchUsers:
             return "/users"
+        case .fetchUser(let id):
+            return "/users/\(id)"
         }
         
     }
@@ -36,6 +40,8 @@ extension UserService: TargetType {
     var method: Moya.Method {
         switch self {
         case .fetchUsers:
+            return .get
+        case .fetchUser(_):
             return .get
         }
     }

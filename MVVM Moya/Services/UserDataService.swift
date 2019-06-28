@@ -37,4 +37,21 @@ class UserDataService {
         }
     }
     
+    func requestFetchUser(with id: Int, completion: @escaping ((User?, Error?) -> Void)) {
+        provider.request(.fetchUser(id: id)) { result in
+            switch result {
+            case .success(let response):
+                do {
+                    let decoder = JSONDecoder()
+                    let user = try decoder.decode(User.self, from: response.data)
+                    completion(user, nil)
+                } catch (let error) {
+                    completion(nil, error)
+                }
+            case .failure(let error):
+                completion(nil, error)
+            }
+        }
+    }
+    
 }

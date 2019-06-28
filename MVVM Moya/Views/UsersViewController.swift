@@ -90,7 +90,18 @@ extension UsersViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        let user = viewModel.users[indexPath.row]
+        guard let id = user.id else { return }
+        showUser(with: id)
+    }
+    
+    func showUser(with id: Int) {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        guard let viewController = storyboard.instantiateViewController(withIdentifier: "UserViewController") as? UserViewController else {
+            return
+        }
+        viewController.userId = id
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
 }
