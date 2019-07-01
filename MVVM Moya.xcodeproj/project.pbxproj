@@ -23,6 +23,11 @@
 		92A57E3722C0DE2B000160A1 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A57E3622C0DE2B000160A1 /* Resources.swift */; };
 		92A57E3922C0E0B0000160A1 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A57E3822C0E0B0000160A1 /* UsersViewModel.swift */; };
 		92BB9E5A22C5BE43008DFC6E /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BB9E5922C5BE43008DFC6E /* UserViewModel.swift */; };
+		92BEF49A22CA06AD00AEA588 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BEF49922CA06AD00AEA588 /* Post.swift */; };
+		92BEF49D22CA06C800AEA588 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BEF49C22CA06C800AEA588 /* PostService.swift */; };
+		92BEF49F22CA083300AEA588 /* PostDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BEF49E22CA083300AEA588 /* PostDataService.swift */; };
+		92BEF4A122CA093400AEA588 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BEF4A022CA093400AEA588 /* PostViewModel.swift */; };
+		92BEF4A422CA0AB900AEA588 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BEF4A322CA0AB900AEA588 /* UIViewController+Alert.swift */; };
 		A2D8BA3D6A415952775A9BDB /* Pods_MVVM_Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3716FC2FBB63F910642BA37D /* Pods_MVVM_Moya.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +53,11 @@
 		92A57E3622C0DE2B000160A1 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		92A57E3822C0E0B0000160A1 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		92BB9E5922C5BE43008DFC6E /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		92BEF49922CA06AD00AEA588 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		92BEF49C22CA06C800AEA588 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		92BEF49E22CA083300AEA588 /* PostDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataService.swift; sourceTree = "<group>"; };
+		92BEF4A022CA093400AEA588 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		92BEF4A322CA0AB900AEA588 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,7 @@
 		927848F922C0D97200B7A541 /* MVVM Moya */ = {
 			isa = PBXGroup;
 			children = (
+				92BEF4A222CA0A9A00AEA588 /* Helpers */,
 				9278491122C0DB2700B7A541 /* Services */,
 				9278491022C0DB2200B7A541 /* Models */,
 				9278490E22C0DB0A00B7A541 /* View Models */,
@@ -100,6 +111,7 @@
 				92A57E3422C0DCA7000160A1 /* ViewModelState.swift */,
 				92A57E3822C0E0B0000160A1 /* UsersViewModel.swift */,
 				92BB9E5922C5BE43008DFC6E /* UserViewModel.swift */,
+				92BEF4A022CA093400AEA588 /* PostViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -119,10 +131,8 @@
 		9278491022C0DB2200B7A541 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9278491322C0DB6500B7A541 /* User.swift */,
-				92A57E2A22C0DC4D000160A1 /* Address.swift */,
-				92A57E2C22C0DC60000160A1 /* Geo.swift */,
-				92A57E2E22C0DC6E000160A1 /* Company.swift */,
+				92BEF49B22CA06BA00AEA588 /* User */,
+				92BEF49922CA06AD00AEA588 /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -132,8 +142,29 @@
 			children = (
 				92A57E3022C0DC90000160A1 /* UserService.swift */,
 				92A57E3222C0DC9A000160A1 /* UserDataService.swift */,
+				92BEF49C22CA06C800AEA588 /* PostService.swift */,
+				92BEF49E22CA083300AEA588 /* PostDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		92BEF49B22CA06BA00AEA588 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				9278491322C0DB6500B7A541 /* User.swift */,
+				92A57E2A22C0DC4D000160A1 /* Address.swift */,
+				92A57E2C22C0DC60000160A1 /* Geo.swift */,
+				92A57E2E22C0DC6E000160A1 /* Company.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		92BEF4A222CA0A9A00AEA588 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				92BEF4A322CA0AB900AEA588 /* UIViewController+Alert.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		D5BD58FB0AA229CD2DC54323 /* Pods */ = {
@@ -270,14 +301,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				92A57E3922C0E0B0000160A1 /* UsersViewModel.swift in Sources */,
+				92BEF49F22CA083300AEA588 /* PostDataService.swift in Sources */,
 				9230A66422C5BBE50005DAEE /* UserViewController.swift in Sources */,
 				92A57E3122C0DC90000160A1 /* UserService.swift in Sources */,
 				927848FB22C0D97200B7A541 /* AppDelegate.swift in Sources */,
 				92A57E3322C0DC9A000160A1 /* UserDataService.swift in Sources */,
+				92BEF4A122CA093400AEA588 /* PostViewModel.swift in Sources */,
+				92BEF49A22CA06AD00AEA588 /* Post.swift in Sources */,
 				92A57E3722C0DE2B000160A1 /* Resources.swift in Sources */,
+				92BEF4A422CA0AB900AEA588 /* UIViewController+Alert.swift in Sources */,
 				9278490D22C0DA0400B7A541 /* UsersViewController.swift in Sources */,
 				92A57E2B22C0DC4D000160A1 /* Address.swift in Sources */,
 				9278491422C0DB6500B7A541 /* User.swift in Sources */,
+				92BEF49D22CA06C800AEA588 /* PostService.swift in Sources */,
 				92BB9E5A22C5BE43008DFC6E /* UserViewModel.swift in Sources */,
 				92A57E2D22C0DC60000160A1 /* Geo.swift in Sources */,
 				92A57E2F22C0DC6E000160A1 /* Company.swift in Sources */,

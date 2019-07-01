@@ -34,7 +34,6 @@ extension UserService: TargetType {
         case .fetchUser(let id):
             return "/users/\(id)"
         }
-        
     }
     
     var method: Moya.Method {

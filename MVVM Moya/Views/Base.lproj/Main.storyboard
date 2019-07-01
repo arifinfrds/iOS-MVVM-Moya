@@ -38,7 +38,13 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" id="WFx-FA-PCr"/>
+                    <navigationItem key="navigationItem" id="WFx-FA-PCr">
+                        <barButtonItem key="rightBarButtonItem" title="Add Post" id="78h-4p-n7V">
+                            <connections>
+                                <action selector="addNewPost:" destination="BYZ-38-t0r" id="XCi-ix-GX7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="EwP-US-ji1" id="8bq-zW-h7Y"/>
                     </connections>
